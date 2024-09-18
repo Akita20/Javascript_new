@@ -24,5 +24,8 @@ function drive(){
 }
 getIntoCar()
 .then( (result) => startCar())
-.then( (result) => drive());
+.then( (result) => drive())
+.finally( () =>{
+        console.log("All tasks completed");
+})
 
